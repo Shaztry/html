@@ -2,17 +2,46 @@
 <html>
     <head>
         <style>
-            /*here css barithivi*/
+            *{
+                padding: 5px;
+                margin: 5px;
+                font-family: 'Arial Rounded MT';
+            }
+            body{
+                background-image: url("https://raw.githubusercontent.com/Shaztry/html/master/wallpaper.jpg");
+                color: whitesmoke;
+            }
+            div.container{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0.7;
+                background: rgb(40,40,40);
+                border-radius: 5px;
+            }
+            input,label,button{
+                opacity: 1;
+                font-size: 20px;
+                border-radius: 5px;
+            }
+            h3{
+                font-size: 30px;
+                background-color: rgb(50,50,50);
+            }
+            tr#header{
+                text-align: center;
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <table>
-                <th>
-                    <td colspan="2">
+                <tr colspan="2"  id="header">
+                    <td>
                         <h3>Register</h3>
                     </td>
-                </th>
+                </tr>
                 <tr>
                     <td>
                         <label for="fname">First Name</label>
