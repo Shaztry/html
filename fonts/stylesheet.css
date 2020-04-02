@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Berton Roman';
+    src: url('BertonRoman-Regular.woff2') format('woff2'),
+        url('BertonRoman-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rosemary';
+    src: url('Rosemary.woff2') format('woff2'),
+        url('Rosemary.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roxeline';
+    src: url('Roxeline-Regular.woff2') format('woff2'),
+        url('Roxeline-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+        font-family: 'Berton Roman';
+        src: url(BertonRoman-Regular.woff2) format('woff2'),
+        url(BertonRoman-Regular.woff) format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
