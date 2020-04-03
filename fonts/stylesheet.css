@@ -29,3 +29,10 @@
         font-weight: normal;
         font-style: normal;
       }
+
+      html{
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center center;
+        background-attachment: fixed;
+    }
