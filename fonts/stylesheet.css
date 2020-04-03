@@ -24,8 +24,8 @@
 
 @font-face {
         font-family: 'Berton Roman';
-        src: url(BertonRoman-Regular.woff2) format('woff2'),
-        url(BertonRoman-Regular.woff) format('woff');
+        src: url(fonts/BertonRoman-Regular.woff2) format('woff2'),
+        url(fonts/BertonRoman-Regular.woff) format('woff');
         font-weight: normal;
         font-style: normal;
       }
