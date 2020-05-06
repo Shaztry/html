@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shas3 Resume in HTML</title>
+    <style>
+        @font-face {
+            font-family: 'Rosemary';
+            src: url(fonts/Rosemary.woff2) format('woff2'),
+            url(fonts/Rosemary.woff) format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        *{
+            position: absolute;
+            padding: 5px;
+            font-family: 'Rosemary';   
+            background-color: white;
+            color: black; 
+            font-size: 50px;
+        }
+        div{
+            border: 1px solid black;
+            background-color: rgb(200,200,200);
+            
+        }
+        div.sheet,body{
+            height: 3507px;
+            width: 2481px;
+        }
+        /*header start*/
+        /* 20% 701px */ 
+        div.header{
+            height: 20%;
+            width: 99%;
+        }
+        div.image{
+            left: 0%;
+            width: 30%;
+            height: 95%;
+        }
+        div.name{
+            left: 31%;
+            width: 35%;
+            height: 95%;
+        }
+        div.contact{
+            left: 67%;
+            width: 32%;
+            height: 95%;
+        }
+        /*header end*/
+        /*profession start 720px*/
+        div.profession{
+            top: 21%;
+            height: 40%;
+            width: 99%;
+        }
+        div.education{
+            width: 49%;
+            height: 98%;
+        }
+        div.work{
+            left: 50%;
+            height: 98%;
+            width: 49%;
+        }
+        /*profession end*/
+        /*skill start*/
+        div.skill{
+            top: 62%;
+            width: 99%;
+            height: 20%;
+        }
+        div.coding{
+            width: 49%;
+            height: 96%;
+        }
+        div.personal{
+            left: 50%;
+            width: 49%;
+            height: 96%;
+        }
+        /*skill end*/
+        /*about start*/
+        div.about{
+            top: 83%;
+            width: 99%;
+            height: 16.5%;
+        }
+        div.me{
+            width: 49%;
+            height: 95%;
+        }
+        div.social{
+            left: 50%;
+            width: 49%;
+            height: 95%;
+        }
+        /*about end*/
+    </style>
+</head>
+<body>
+    <div class="sheet">
+        <div class="header">
+            <div class="image">
+                <img src="#" alt="DP">
+            </div>
+            <div class="name">NAME</div>
+            <div class="contact">CONTACT</div>
+        </div>
+        <div class="profession">
+            <div class="education">EDUCATION</div>
+            <div class="work">WORK CERTIFICATE</div>
+        </div>
+        <div class="skill">
+            <div class="coding">CODE</div>
+            <div class="personal">SKETCH</div>
+        </div>
+        <div class="about">
+            <div class="me">ME</div>
+            <div class="social">SOCIAL</div>
+        </div>
+    </div>
+</body>
+</html>
