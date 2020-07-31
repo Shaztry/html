@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Chinnumaaa 😍</title>
+    <style media="screen">
+         @font-face {
+        font-family: 'Rosemary';
+        src: url(fonts/Rosemary.woff2) format('woff2'),
+        url(fonts/Rosemary.woff) format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'Berton Roman';
+        src: url('fonts/BertonRoman-Regular.woff2') format('woff2'),
+        url('fonts/BertonRoman-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+    *{
+      padding: 0;
+      margin: 0;
+      font-family: 'Rosemary';
+    }
+
+    body{
+      background-image: url("https://raw.githubusercontent.com/Shaztry/html/master/wallpaper1.jpg");
+      color: white;
+    }
+    .circle{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+    }
+    @keyframes animateHeart {
+        from{
+            font-size: 0px;
+        }
+        to{
+            font-size: 350px;
+        }
+    }
+    #heartemoji{
+        width: 100%;
+        font-size: 350px;
+        animation-name: animateHeart;
+        animation-duration: 10s;
+        opacity: 50%;
+    }
+    #wishes{
+        position: absolute;
+        height: auto;
+        width: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation-name: animate;
+        animation-duration: 10s;
+        font-size: 20px;
+    }
+    @keyframes animate {
+        from{
+            font-size: 0px;
+        }
+        to{
+            font-size: 20px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="circle">
+        <h1 id="heartemoji">💖</h1>
+    </div>
+    <p id="wishes"> 😊 Chippi 😊 <br> Wish you many many <br> Happy returns of the day</p>
+</body>
+</html>
