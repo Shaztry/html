@@ -1,0 +1,554 @@
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECP Query String</title>
+        <link rel="stylesheet" href="C:\Users\Nagbhushan.k\Documents\ECP\Airtel Africa\QS\QSstyle.css">
+        <script src="C:\Users\Nagbhushan.k\Documents\ECP\Airtel Africa\QS\QSscript.js"></script>
+        <style>
+        
+        h1,h2{
+    margin: auto;
+    padding: 5px;
+    background-color: rgb(26, 26, 26);
+}
+table,tr,td{
+    padding: 5px;
+    text-align: left;
+}
+body{
+    font-family: 'Berton Roman';
+    color: white;
+    background: rgb(0, 0, 0);
+}
+@font-face {
+        font-family: 'Berton Roman';
+        src: url('fonts/BertonRoman-Regular.woff2') format('woff2'),
+        url('fonts/BertonRoman-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+input, select{
+    border-radius: 5px;
+    font-family: 'Arial';
+    width: 150px;
+}
+
+#mydivQSNB, #mydivQSB, #mydivQSBS, #mydivQSNBS{
+    background-color: rgb(20, 20, 20);
+    color: whitesmoke;
+    width: 400px;
+    border-radius: 5px;
+    visibility: hidden;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-75%);
+}
+
+#anch,#anchB,#anchS,#anchBS,#anchN,#anchBN,#anchSN,#anchBSN{
+    background: darkgray;
+    border-radius: 5px;
+    color: black;
+    width: 20px;
+}
+button{
+    font-family: 'Arial';
+    width: 50px;
+}
+#modeD,#modeL{
+    position:unset;
+}
+#mydivChoose,#heading{
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 400px;
+}
+
+            
+        </style>
+
+        <script>
+            function sendNB(){
+    var msisdn = document.getElementById("msisdn").value;
+    var cpUsr = document.getElementById("cpUsr").value;
+    var cpAcc = document.getElementById("cpAcc").value;
+    var msgType = document.getElementById("msgType").value;
+    var msg = document.getElementById("msg").value;
+    var pswd = document.getElementById("pswd").value;
+    var atag = document.getElementById("anch");
+    var ip = document.getElementById("ip").value;
+    var port = document.getElementById("port").value;
+    var url = "http://"+ip+":"+port+"/smshttp/qs/?REQUESTTYPE=SMSSubmitReq&MOBILENO="+msisdn+"&USERNAME="+cpUsr+"&ORIGIN_ADDR="+cpAcc+"&TYPE="+msgType+"&MESSAGE="+msg+"&PASSWORD="+pswd;
+    atag.setAttribute("href",url);
+}
+
+function sendB(){
+    var targetlist = document.getElementById("targetlist").value;
+    var cpUsrB = document.getElementById("cpUsrB").value;
+    var cpAccB = document.getElementById("cpAccB").value;
+    var msgTypeB = document.getElementById("msgTypeB").value;
+    var msgB = document.getElementById("msgB").value;
+    var pswdB = document.getElementById("pswdB").value;
+    var atagB = document.getElementById("anchB");
+    var ipB = document.getElementById("ipB").value;
+    var portB = document.getElementById("portB").value;
+    var urlB = "http://"+ipB+":"+portB+"/smshttp/qs/?REQUESTTYPE=SMSSubmitReq&DISTRIBUTION_LIST="+targetlist+"&USERNAME="+cpUsrB+"&ORIGIN_ADDR="+cpAccB+"&TYPE="+msgTypeB+"&MESSAGE="+msgB+"&PASSWORD="+pswdB;
+    atagB.setAttribute("href",urlB);
+}
+
+
+function sendS(){
+    var msisdnS = document.getElementById("msisdnS").value;
+    var cpUsrS = document.getElementById("cpUsrS").value;
+    var cpAccS = document.getElementById("cpAccS").value;
+    var msgTypeS = document.getElementById("msgTypeS").value;
+    var msgS = document.getElementById("msgS").value;
+    var pswdS = document.getElementById("pswdS").value;
+    var atagS = document.getElementById("anchS");
+    var ipS = document.getElementById("ipS").value;
+    var portS = document.getElementById("portS").value;
+    var dateS = document.getElementById("scheduleS").value;
+    var urlS = "http://"+ipS+":"+portS+"/smshttp/qs/?REQUESTTYPE=SMSSubmitReq&MOBILENO="+msisdnS+"&USERNAME="+cpUsrS+"&ORIGIN_ADDR="+cpAccS+"&TYPE="+msgTypeS+"&MESSAGE="+msgS+"&PASSWORD="+pswdS+"&SCHEDULEDDELIVERYDATETIME="+dateS;
+    atagS.setAttribute("href",urlS);
+}
+
+function sendBS(){
+    var targetlistS = document.getElementById("targetlistS").value;
+    var cpUsrBS = document.getElementById("cpUsrBS").value;
+    var cpAccBS = document.getElementById("cpAccBS").value;
+    var msgTypeBS = document.getElementById("msgTypeBS").value;
+    var msgBS = document.getElementById("msgBS").value;
+    var pswdBS = document.getElementById("pswdBS").value;
+    var atagBS = document.getElementById("anchBS");
+    var ipBS = document.getElementById("ipBS").value;
+    var portBS = document.getElementById("portBS").value;
+    var dateBS = document.getElementById("scheduleBS").value;
+    var urlBS = "http://"+ipBS+":"+portBS+"/smshttp/qs/?REQUESTTYPE=SMSSubmitReq&DISTRIBUTION_LIST="+targetlistS+"&USERNAME="+cpUsrBS+"&ORIGIN_ADDR="+cpAccBS+"&TYPE="+msgTypeBS+"&MESSAGE="+msgBS+"&PASSWORD="+pswdBS+"&SCHEDULEDDELIVERYDATETIME="+dateBS;
+    atagBS.setAttribute("href",urlBS);
+}
+
+
+
+function toggle(){
+    var check = document.getElementById("choose").value;
+    if(check == 1){
+        document.getElementById("mydivQSB").style.visibility = "visible";
+        document.getElementById("mydivQSNB").style.visibility = "hidden";
+        document.getElementById("mydivQSBS").style.visibility = "hidden";
+        document.getElementById("mydivQSBS").style.visibility = "hidden";
+    } else if(check == 3){
+        document.getElementById("mydivQSB").style.visibility = "hidden";
+        document.getElementById("mydivQSNB").style.visibility = "hidden";
+        document.getElementById("mydivQSBS").style.visibility = "visible";
+        document.getElementById("mydivQSNBS").style.visibility = "hidden";
+    } else if(check == 2){
+        document.getElementById("mydivQSB").style.visibility = "hidden";
+        document.getElementById("mydivQSNB").style.visibility = "hidden";
+        document.getElementById("mydivQSBS").style.visibility = "hidden";
+        document.getElementById("mydivQSNBS").style.visibility = "visible";
+    } else{
+        document.getElementById("mydivQSB").style.visibility = "hidden";
+        document.getElementById("mydivQSNB").style.visibility = "visible";
+        document.getElementById("mydivQSBS").style.visibility = "hidden";
+        document.getElementById("mydivQSNBS").style.visibility = "hidden";
+    }
+}
+
+
+
+
+function sendNBN(){
+    var msisdn = document.getElementById("msisdn").value;
+    var cpUsr = document.getElementById("cpUsr").value;
+    var cpAcc = document.getElementById("cpAcc").value;
+    var msgType = document.getElementById("msgType").value;
+    var msg = document.getElementById("msg").value;
+    var pswd = document.getElementById("pswd").value;
+    var atag = document.getElementById("anchN");
+    var ip = document.getElementById("ip").value;
+    var port = document.getElementById("port").value;
+    var url = "http://"+ip+":"+port+"/smshttpquery/qs/?REQUESTTYPE=SMSSubmitReq&MOBILENO="+msisdn+"&USERNAME="+cpUsr+"&ORIGIN_ADDR="+cpAcc+"&TYPE="+msgType+"&MESSAGE="+msg+"&PASSWORD="+pswd;
+    atag.setAttribute("href",url);
+}
+
+function sendBN(){
+    var targetlist = document.getElementById("targetlist").value;
+    var cpUsrB = document.getElementById("cpUsrB").value;
+    var cpAccB = document.getElementById("cpAccB").value;
+    var msgTypeB = document.getElementById("msgTypeB").value;
+    var msgB = document.getElementById("msgB").value;
+    var pswdB = document.getElementById("pswdB").value;
+    var atagB = document.getElementById("anchBN");
+    var ipB = document.getElementById("ipB").value;
+    var portB = document.getElementById("portB").value;
+    var urlB = "http://"+ipB+":"+portB+"/smshttpquery/qs/?REQUESTTYPE=SMSSubmitReq&DISTRIBUTION_LIST="+targetlist+"&USERNAME="+cpUsrB+"&ORIGIN_ADDR="+cpAccB+"&TYPE="+msgTypeB+"&MESSAGE="+msgB+"&PASSWORD="+pswdB;
+    atagB.setAttribute("href",urlB);
+}
+
+
+function sendSN(){
+    var msisdnS = document.getElementById("msisdnS").value;
+    var cpUsrS = document.getElementById("cpUsrS").value;
+    var cpAccS = document.getElementById("cpAccS").value;
+    var msgTypeS = document.getElementById("msgTypeS").value;
+    var msgS = document.getElementById("msgS").value;
+    var pswdS = document.getElementById("pswdS").value;
+    var atagS = document.getElementById("anchSN");
+    var ipS = document.getElementById("ipS").value;
+    var portS = document.getElementById("portS").value;
+    var dateS = document.getElementById("scheduleS").value;
+    var urlS = "http://"+ipS+":"+portS+"/smshttpquery/qs/?REQUESTTYPE=SMSSubmitReq&MOBILENO="+msisdnS+"&USERNAME="+cpUsrS+"&ORIGIN_ADDR="+cpAccS+"&TYPE="+msgTypeS+"&MESSAGE="+msgS+"&PASSWORD="+pswdS+"&SCHEDULEDDELIVERYDATETIME="+dateS;
+    atagS.setAttribute("href",urlS);
+}
+
+function sendBSN(){
+    var targetlistS = document.getElementById("targetlistS").value;
+    var cpUsrBS = document.getElementById("cpUsrBS").value;
+    var cpAccBS = document.getElementById("cpAccBS").value;
+    var msgTypeBS = document.getElementById("msgTypeBS").value;
+    var msgBS = document.getElementById("msgBS").value;
+    var pswdBS = document.getElementById("pswdBS").value;
+    var atagBS = document.getElementById("anchBSN");
+    var ipBS = document.getElementById("ipBS").value;
+    var portBS = document.getElementById("portBS").value;
+    var dateBS = document.getElementById("scheduleBS").value;
+    var urlBS = "http://"+ipBS+":"+portBS+"/smshttpquery/qs/?REQUESTTYPE=SMSSubmitReq&DISTRIBUTION_LIST="+targetlistS+"&USERNAME="+cpUsrBS+"&ORIGIN_ADDR="+cpAccBS+"&TYPE="+msgTypeBS+"&MESSAGE="+msgBS+"&PASSWORD="+pswdBS+"&SCHEDULEDDELIVERYDATETIME="+dateBS;
+    atagBS.setAttribute("href",urlBS);
+}
+
+
+        </script>
+    </head>
+    <body>
+        <center>
+        <div id="heading">
+            <h1>ECP - Query string Interface</h1>
+            <h2>Choose bulk or nonbulk</h2>
+        </div>
+        <div id="mydivChoose">
+            <table>
+                <tr>
+                    <td>
+                        <select name="choose" id="choose">
+                            <option value="0">Non-Bulk</option>
+                            <option value="1">Bulk</option>
+                            <option value="2">Scheduled Non-Bulk</option>
+                            <option value="3">Scheduled Bulk</option>
+                        </select>
+                    </td>
+                    <td>
+                        <button onclick="toggle()">OK</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </center>
+        <div id="mydivQSNB">
+            <table>
+                <tr>
+
+                    <td colspan="2">
+                        <h2>Non-Bulk - Query String UI v0.2</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>IP</td>
+                    <td>
+                        <input id="ip" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Port</td>
+                    <td>
+                        <input id="port" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mobile number</td>
+                    <td>
+                        <input id="msisdn" type="number"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Username</td>
+                    <td>
+                        <input id="cpUsr" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input id="pswd" type="password"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>SenderID</td>
+                    <td>
+                        <input id="cpAcc" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>MessageType</td>
+                    <td>
+                        <select id="msgType">
+                            <option value="0">Text</option>
+                            <option value="25">Unicode</option>
+                            <option value="8">Flash</option>
+                            <option value="26">Unicode-Flash</option>
+                        </select>                      
+                    </td>
+                </tr>
+                <tr>
+                    <td>Message</td>
+                    <td>
+                        <input id="msg" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" id="anch" onclick="sendNB()">Old QS: Send</a>          
+                    </td>
+                    <td>
+                        <a href="#" id="anchN" onclick="sendNBN()">New QS: Send</a>          
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div id="mydivQSB">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <h2>Bulk - Query String UI v0.2</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>IP</td>
+                    <td>
+                        <input id="ipB" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Port</td>
+                    <td>
+                        <input id="portB" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>TargetList</td>
+                    <td>
+                        <input id="targetlist" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Username</td>
+                    <td>
+                        <input id="cpUsrB" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input id="pswdB" type="password"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>SenderID</td>
+                    <td>
+                        <input id="cpAccB" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>MessageType</td>
+                    <td>
+                        <select id="msgTypeB">
+                            <option value="0">Text</option>
+                            <option value="25">Unicode</option>
+                            <option value="8">Flash</option>
+                            <option value="26">Unicode-Flash</option>
+                        </select>                      
+                    </td>
+                </tr>
+                <tr>
+                    <td>Message</td>
+                    <td>
+                        <input id="msgB" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" id="anchB" onclick="sendB()">Old QS: Send</a>          
+                    </td>
+                    <td>
+                        <a href="#" id="anchBN" onclick="sendBN()">New QS: Send</a>          
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+
+
+        <div id="mydivQSBS">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <h2>Scheduled Bulk - Query String UI v0.2</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>IP</td>
+                    <td>
+                        <input id="ipBS" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Port</td>
+                    <td>
+                        <input id="portBS" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>TargetList</td>
+                    <td>
+                        <input id="targetlistS" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Username</td>
+                    <td>
+                        <input id="cpUsrBS" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input id="pswdBS" type="password"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>SenderID</td>
+                    <td>
+                        <input id="cpAccBS" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>MessageType</td>
+                    <td>
+                        <select id="msgTypeBS">
+                            <option value="0">Text</option>
+                            <option value="25">Unicode</option>
+                            <option value="8">Flash</option>
+                            <option value="26">Unicode-Flash</option>
+                        </select>                      
+                    </td>
+                </tr>
+                <tr>
+                    <td>Message</td>
+                    <td>
+                        <input id="msgBS" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Scheduled Date</td>
+                    <td>
+                        <input id="scheduleBS" type="number"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" id="anchBS" onclick="sendBS()">Old QS: Send</a>          
+                    </td>
+                    <td>
+                        <a href="#" id="anchBSN" onclick="sendBSN()">New QS: Send</a>          
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+
+        
+        <div id="mydivQSNBS">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <h2>Scheduled Non Bulk - Query String UI v0.2</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>IP</td>
+                    <td>
+                        <input id="ipS" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Port</td>
+                    <td>
+                        <input id="portS" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mobile number</td>
+                    <td>
+                        <input id="msisdnS" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Username</td>
+                    <td>
+                        <input id="cpUsrS" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input id="pswdS" type="password"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>SenderID</td>
+                    <td>
+                        <input id="cpAccS" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>MessageType</td>
+                    <td>
+                        <select id="msgTypeS">
+                            <option value="0">Text</option>
+                            <option value="25">Unicode</option>
+                            <option value="8">Flash</option>
+                            <option value="26">Unicode-Flash</option>
+                        </select>                      
+                    </td>
+                </tr>
+                <tr>
+                    <td>Message</td>
+                    <td>
+                        <input id="msgS" type="text"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Scheduled Date</td>
+                    <td>
+                        <input id="scheduleS" type="number"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" id="anchS" onclick="sendS()">Old QS: Send</a>          
+                    </td>
+                    <td>
+                        <a href="#" id="anchSN" onclick="sendSN()">New QS: Send</a>          
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+
+    </body>
+</html>
