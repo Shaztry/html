@@ -1,0 +1,299 @@
+@font-face {
+    font-family: 'Rosemary';
+    src: url(fonts/Rosemary.woff2) format('woff2'), url(fonts/Rosemary.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    position: absolute;
+    padding: 5px;
+    font-family: 'Rosemary';
+    font-size: 50px;
+}
+
+h1 {
+    font-size: 120px;
+}
+
+div {
+    /*border: 1px solid black;*/
+    border-radius: 10px;
+    background-color: white;
+}
+
+div.sheet {
+    height: 3507px;
+    width: 2481px;
+    background-color: rgb(100, 100, 100);
+}
+
+
+/*header start*/
+
+
+/* 20% 701px */
+
+div.header {
+    height: 20%;
+    width: 99%;
+    background-color: rgb(30, 30, 30);
+    color: whitesmoke;
+}
+
+div.image {
+    left: 0%;
+    width: 30%;
+    height: 95%;
+    background-color: rgb(30, 30, 30);
+}
+
+img {
+    height: 98%;
+    width: 94%;
+    border-radius: 50%;
+}
+
+div.name {
+    left: 31%;
+    width: 35%;
+    height: 95%;
+    background-color: rgb(30, 30, 30);
+}
+
+#job {
+    top: 50%;
+}
+
+div.contact {
+    left: 67%;
+    width: 32%;
+    height: 95%;
+    background-color: rgb(30, 30, 30);
+}
+
+#addI {
+    top: 40%;
+}
+
+#emailI {
+    top: 60%;
+}
+
+#phnoI {
+    top: 50%;
+}
+
+
+/*header end*/
+
+
+/*profession start 720px*/
+
+div.profession {
+    top: 21%;
+    height: 40%;
+    width: 99%;
+    background-color: rgb(100, 100, 100);
+    color: rgb(30, 30, 30);
+}
+
+div.education {
+    width: 49%;
+    height: 98%;
+}
+
+div.educationHead {
+    height: 18%;
+    width: 97%;
+}
+
+#bcaCap {
+    top: 40%;
+}
+
+#educ {
+    top: 17%;
+    left: 10%;
+    font-size: 60px;
+}
+
+div.course {
+    top: 20%;
+    width: 23%;
+    height: 78%;
+}
+
+div.institute {
+    top: 20%;
+    left: 25%;
+    width: 41%;
+    height: 78%;
+}
+
+div.percentage {
+    top: 20%;
+    left: 68%;
+    width: 30%;
+    height: 78%;
+}
+
+h2.bca {
+    top: 20%;
+}
+
+h2.xii {
+    top: 45%;
+}
+
+h2.sslc {
+    top: 70%;
+}
+
+div.work {
+    left: 50%;
+    height: 98%;
+    width: 49%;
+    color: rgb(30, 30, 30);
+}
+
+h2#wrk {
+    left: 10%;
+    top: 4%;
+    height: 98%;
+    width: 49%;
+    font-size: 60px;
+}
+
+#wkrIcon {
+    top: 8%;
+    height: 98%;
+    width: 49%;
+}
+
+div.comName {
+    top: 20%;
+    height: 30%;
+    width: 45%;
+}
+
+h2.com {
+    top: 35%;
+    height: 45%;
+    width: 45%;
+}
+
+div.jobTitle {
+    left: 25%;
+    top: 20%;
+    height: 30%;
+    width: 45%;
+}
+
+h2.softTest {
+    top: 35%;
+    height: 30%;
+    width: 45%;
+}
+
+div.jobExp {
+    left: 50%;
+    top: 20%;
+    height: 30%;
+    width: 45%;
+}
+
+h2.exp1 {
+    top: 35%;
+    height: 30%;
+    width: 45%;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+
+/*profession end*/
+
+
+/*skill start*/
+
+div.skill {
+    top: 62%;
+    width: 99%;
+    height: 20%;
+    background-color: rgb(100, 100, 100);
+    color: rgb(30, 30, 30);
+}
+
+div.coding {
+    width: 49%;
+    height: 96%;
+}
+
+h2#cod {
+    left: 10%;
+    top: 4%;
+    height: 98%;
+    width: 49%;
+    font-size: 60px;
+}
+
+#codIcon {
+    top: 8%;
+    height: 98%;
+    width: 49%;
+}
+
+#htmll {
+    top: 35%;
+}
+
+#html {
+    top: 35%;
+    left: 15%;
+}
+
+#cssl {
+    top: 45%;
+}
+
+#css {
+    top: 45%;
+    left: 15%
+}
+
+div.personal {
+    left: 50%;
+    width: 49%;
+    height: 96%;
+}
+
+
+/*skill end*/
+
+
+/*about start*/
+
+div.about {
+    top: 83%;
+    width: 99%;
+    height: 16.5%;
+    background-color: rgb(100, 100, 100);
+    color: rgb(30, 30, 30);
+}
+
+div.me {
+    width: 49%;
+    height: 95%;
+}
+
+div.social {
+    left: 50%;
+    width: 49%;
+    height: 95%;
+}
+
+
+/*about end*/
