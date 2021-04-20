@@ -138,15 +138,15 @@ div.percentage {
     height: 78%;
 }
 
-h2.bca {
+p.bca {
     top: 20%;
 }
 
-h2.xii {
+p.xii {
     top: 45%;
 }
 
-h2.sslc {
+p.sslc {
     top: 70%;
 }
 
@@ -157,7 +157,7 @@ div.work {
     color: rgb(30, 30, 30);
 }
 
-h2#wrk {
+p#wrk {
     left: 10%;
     top: 4%;
     height: 98%;
@@ -177,7 +177,7 @@ div.comName {
     width: 45%;
 }
 
-h2.com {
+p.com {
     top: 35%;
     height: 45%;
     width: 45%;
@@ -190,7 +190,7 @@ div.jobTitle {
     width: 45%;
 }
 
-h2.softTest {
+p.softTest {
     top: 35%;
     height: 30%;
     width: 45%;
@@ -203,7 +203,7 @@ div.jobExp {
     width: 45%;
 }
 
-h2.exp1 {
+p.exp1 {
     top: 35%;
     height: 30%;
     width: 45%;
@@ -232,36 +232,69 @@ div.coding {
     height: 96%;
 }
 
-h2#cod {
+p#cod {
     left: 10%;
-    top: 4%;
+    top: 2%;
     height: 98%;
     width: 49%;
     font-size: 60px;
 }
 
 #codIcon {
-    top: 8%;
+    top: 12%;
     height: 98%;
     width: 49%;
 }
 
 #htmll {
-    top: 35%;
+    top: 25%;
 }
 
 #html {
-    top: 35%;
-    left: 15%;
+    top: 25%;
+    left: 35%;
 }
 
 #cssl {
-    top: 45%;
+    top: 35%;
 }
 
 #css {
+    top: 35%;
+    left: 35%;
+}
+
+#javal {
     top: 45%;
-    left: 15%
+}
+
+#java {
+    top: 45%;
+    left: 35%;
+}
+#unixl {
+    top: 55%;
+}
+
+#unix {
+    top: 55%;
+    left: 35%;
+}
+#datastructurel {
+    top: 65%;
+}
+
+#datastructure {
+    top: 65%;
+    left: 35%;
+}
+#robotframeworkl {
+    top: 75%;
+}
+
+#robotframework {
+    top: 75%;
+    left: 35%;
 }
 
 div.personal {
@@ -270,6 +303,52 @@ div.personal {
     height: 96%;
 }
 
+#pythonl {
+    top: 25%;
+}
+#python {
+    top: 25%;
+    left: 35%;
+}
+
+#cl {
+    top: 35%;
+}
+#c {
+    top: 35%;
+    left: 35%;
+}
+
+#cppl {
+    top: 45%;
+}
+#cpp {
+    top: 45%;
+    left: 35%;
+}
+
+#j2eel {
+    top: 55%;
+}
+#j2ee {
+    top: 55%;
+    left: 35%;
+}
+
+#sketchingl {
+    top: 65%;
+}
+#sketching {
+    top: 65%;
+    left: 35%;
+}
+#communicationl {
+    top: 75%;
+}
+#communication {
+    top: 75%;
+    left: 35%;
+}
 
 /*skill end*/
 
@@ -288,12 +367,60 @@ div.me {
     width: 49%;
     height: 95%;
 }
+#abtme{
+    top: 20%;
+    font-size: 45px;
+}
 
 div.social {
     left: 50%;
     width: 49%;
     height: 95%;
 }
+#linkIcon {
+    top: 30%;
+    height: 98%;
+    width: 49%;
+}
+#linklink{
+    top: 25%;
+    left: 10%;
+}
+
+#faceIcon {
+    top: 40%;
+    height: 98%;
+    width: 49%;
+}
+#facelink{
+    top: 35%;
+    left: 10%;
+}
+
+#instaIcon {
+    top: 50%;
+    height: 98%;
+    width: 49%;
+}
+#instalink{
+    top: 45%;
+    left: 10%;
+}
+
+
+#twitIcon {
+    top: 60%;
+    height: 98%;
+    width: 49%;
+}
+#twitlink{
+    top: 55%;
+    left: 10%;
+}
+p.lnk{
+    font-size: 33px;
+}
+
 
 
 /*about end*/
