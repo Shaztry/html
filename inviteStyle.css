@@ -26,6 +26,7 @@ h1#title {
     font-family: 'Rosemary';
     color: white;
     font-size: 4vw;
+    font-style: italic;
 }
 
 img {
@@ -51,5 +52,4 @@ div.part2 {
 
 h1 {
     font-size: 35px;
-    font-style: italic;
 }
