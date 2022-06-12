@@ -16,13 +16,6 @@ h1#title {
     border: 1px solid rgb(187, 187, 187);
 }
 
-img {
-    height: 100%;
-    width: 100%;
-    object-fit: center;
-    position: absolute;
-}
-
 @font-face {
     font-family: 'Rosemary';
     src: url(fonts/Rosemary.woff2) format('woff2'), url(fonts/Rosemary.woff) format('woff');
@@ -34,6 +27,13 @@ img {
     font-family: 'Rosemary';
     color: white;
     font-size: 20px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: center;
+    position: absolute;
 }
 
 div.heading1 {
