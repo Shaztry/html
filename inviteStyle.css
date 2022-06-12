@@ -16,20 +16,6 @@ h1#title {
     border: 1px solid rgb(187, 187, 187);
 }
 
-
-/*body {
-    background-image: url("./inviteBackground.jpg");
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-image: url("./inviteBackground.jpg");
-}*/
-
 img {
     height: 100%;
     width: 100%;
@@ -47,6 +33,7 @@ img {
 * {
     font-family: 'Rosemary';
     color: white;
+    font-size: 20px;
 }
 
 div.heading1 {
@@ -55,5 +42,4 @@ div.heading1 {
     vertical-align: middle;
     margin: auto;
     transform: translate(0, 40%);
-    position: inherit;
 }
