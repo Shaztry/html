@@ -138,12 +138,15 @@ div.percentage {
     height: 78%;
 }
 
+p.mca {
+    top: 15%;
+}
 p.bca {
-    top: 20%;
+    top: 30%;
 }
 
 p.xii {
-    top: 45%;
+    top: 55%;
 }
 
 p.sslc {
@@ -172,15 +175,30 @@ p#wrk {
 }
 
 div.comName {
-    top: 20%;
-    height: 30%;
-    width: 45%;
+    top: 15%;
+    height: 75%;
+    width: 95%;
 }
 
 p.com {
-    top: 35%;
-    height: 45%;
-    width: 45%;
+    top: 15%;
+    width: 100%;
+    padding: 4px;
+}
+p.com1 {
+    top: 40%;
+    width: 100%;
+    padding: 4px;
+}
+p.com2 {
+    top: 65%;
+    width: 100%;
+    padding: 4px;
+}
+p.com3 {
+    top: 78%;
+    width: 100%;
+    padding: 4px;
 }
 
 div.jobTitle {
@@ -247,54 +265,63 @@ p#cod {
 }
 
 #htmll {
-    top: 25%;
+    top: 20%;
 }
 
 #html {
-    top: 25%;
+    top: 20%;
     left: 35%;
 }
 
 #cssl {
-    top: 35%;
+    top: 30%;
 }
 
 #css {
-    top: 35%;
+    top: 30%;
     left: 35%;
 }
 
 #javal {
-    top: 45%;
+    top: 40%;
 }
 
 #java {
-    top: 45%;
+    top: 40%;
     left: 35%;
 }
 #unixl {
-    top: 55%;
+    top: 50%;
 }
 
 #unix {
-    top: 55%;
+    top: 50%;
     left: 35%;
 }
 #datastructurel {
-    top: 65%;
+    top: 60%;
 }
 
 #datastructure {
-    top: 65%;
+    top: 60%;
     left: 35%;
 }
 #robotframeworkl {
-    top: 75%;
+    top: 70%;
 }
 
 #robotframework {
-    top: 75%;
+    top: 70%;
     left: 35%;
+}
+
+#jiral{
+    top : 80%;
+}
+
+#jira{
+    top : 80%;
+    left : 35%;
 }
 
 div.personal {

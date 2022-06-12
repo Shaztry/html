@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Berton Roman';
+    src: url('fonts/BertonRoman-Regular.woff2') format('woff2'), url('fonts/BertonRoman-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url("./inviteBackground.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: 'Rosemary';
+    src: url(fonts/Rosemary.woff2) format('woff2'), url(fonts/Rosemary.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Rosemary';
+}
+
+div.heading1 {
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin: auto;
+    transform: translate(0, 30%);
+}
