@@ -21,12 +21,13 @@ html {
 h1#title {
     border-radius: 5px;
     border: 1px solid rgb(187, 187, 187);
+    font-weight: bold;
 }
 
 * {
     font-family: 'Rosemary';
     color: white;
-    font-size: 5vw;
+    font-size: 4vw;
 }
 
 img {
@@ -38,8 +39,7 @@ img {
 
 div.heading1 {
     text-align: center;
-    justify-content: center;
-    vertical-align: middle;
-    margin: auto;
-    transform: translate(0, 50%);
+    transform: translate(0%, 50%);
+    position: absolute;
+    padding: 10px;
 }
