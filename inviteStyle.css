@@ -38,9 +38,9 @@ img {
 
 div.heading1 {
     text-align: center;
-    transform: translate(-10%, 50%);
+    transform: translate(0%, 40%);
     position: absolute;
-    padding: 20px;
+    padding: 10px;
 }
 
 div.part1,
@@ -48,10 +48,6 @@ div.part2 {
     border-radius: 5px;
     border: 1px solid rgb(187, 187, 187);
     margin: 5px;
-}
-
-div.part1 {
-    top: -10%;
 }
 
 h1 {
