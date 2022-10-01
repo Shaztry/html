@@ -50,6 +50,10 @@ div.part2 {
     margin: 5px;
 }
 
+div.part1 {
+    top: -10%;
+}
+
 h1 {
     font-size: 5vw;
 }
