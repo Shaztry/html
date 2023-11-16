@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <style>
+        @font-face {
+            font-family: 'Comic Neue';
+            src: url('comicfonts/comicneue-regular-webfont.woff') format('woff'),
+            url('comicfonts/comicneue-regular-webfont.woff2') format('woff2');
+        }
+        
+        * {
+            font-family: 'Comic Neue';
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('image/Back001.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: #fff; /* Adjust text color for better visibility on the background */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            font-size: 24px;
+            opacity: 0.7;
+        }
+
+        section {
+            flex-grow: 1; /* Allow the section to grow and take remaining space */
+            padding: 2rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 600px) {
+            section {
+                padding: 1rem;
+            }
+
+            header {
+                font-size: 20px; /* Adjust font size for smaller screens */
+            }
+
+            footer {
+                font-size: 14px; /* Adjust font size for smaller screens */
+            }
+        }
+
+        a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block; /* Ensure link takes up only necessary space */
+            padding: 10px; /* Adjust padding as needed */
+            margin: 10px 0; /* Add vertical spacing between links */
+            background-color: #4CAF50; /* Green background color */
+            border-radius: 5px; /* Add rounded corners */
+        }
+
+        i {
+            margin-right: 5px; /* Adjust margin as needed */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wedding Invitation</h1>
+    </header>
+    
+    <section>
+        <h2>You're Invited!</h2>
+        <p>We are excited to invite you to our wedding celebration. Join us for a day filled with love, joy, and laughter.</p>
+        <p>Date: <strong>February 26, 2024</strong></p>
+        <p>Time: <strong>8:00 AM</strong></p>
+        <p>Location: <strong><a href="https://maps.app.goo.gl/yvJat2WqnV7XiWju5" target="_blank">Open in Maps</a></strong></p>
+    </section>
+    
+    <footer>
+        <p>© 2023 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
